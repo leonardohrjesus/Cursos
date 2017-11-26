@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:id="@+id/contatoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/servicosid"
+        android:layout_alignTop="@+id/clientesid"
+        app:srcCompat="@drawable/menu_contato" />
+
+    <ImageView
+        android:id="@+id/clientesid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/empresaid"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/menu_cliente" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/servicosid"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/logo"
+       />
+
+    <ImageView
+        android:id="@+id/empresaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientesid"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="53dp"
+        app:srcCompat="@drawable/menu_empresa"
+        />
+
+    <ImageView
+        android:id="@+id/servicosid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/empresaid"
+        android:layout_marginEnd="62dp"
+        app:srcCompat="@drawable/menu_servico"
+       />
+</RelativeLayout>

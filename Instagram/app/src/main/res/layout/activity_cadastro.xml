@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/fundo_degrade"
+
+    android:gravity="center_vertical|center_horizontal|top"
+    tools:context="br.com.instagram.cursoandroid.instagram.activity.CadastroActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+
+        app:srcCompat="@drawable/usuario"
+        android:contentDescription="T0DO" />
+
+    <EditText
+        android:id="@+id/textousuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:padding="15dp"
+
+        android:background="@drawable/fundo_caixa_texto"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+
+        android:hint="@string/texto_digite_seu_usuario" />
+
+    <EditText
+        android:id="@+id/textoemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_caixa_texto"
+        android:padding="15dp"
+
+
+        android:layout_alignLeft="@+id/textousuario"
+        android:layout_alignStart="@+id/textousuario"
+        android:layout_below="@+id/textousuario"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/texto_digite_seu_e_mail"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/textosenha"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoemail"
+            android:layout_alignStart="@+id/textoemail"
+            android:layout_below="@+id/textoemail"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="@string/texto_digite_sua_senha"
+
+            android:padding="15dp"
+            android:password="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textosenha"
+
+
+        android:background="@drawable/fundo_botao"
+        android:text="@string/Cadastrar"
+        android:layout_marginTop="20dp"
+        />
+
+        <TextView
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/textofalogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_below="@+id/bt_cadastrar"
+            android:text="@string/texto_ja_tem_conta" />
+    </RelativeLayout>
+
+</RelativeLayout>

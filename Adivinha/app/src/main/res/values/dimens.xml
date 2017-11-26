@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Tamanho_cabecalho">26dp</dimen>
+    <dimen name="Texo_numero">20dp</dimen>
+</resources>

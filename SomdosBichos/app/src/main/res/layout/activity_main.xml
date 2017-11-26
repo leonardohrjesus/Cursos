@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5e9b9">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/caoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/cao" />
+
+    <ImageView
+        android:id="@+id/gatoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gato"
+        android:layout_alignTop="@+id/caoid"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/leaoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/leao"
+        android:layout_below="@+id/caoid"
+        android:layout_alignStart="@+id/caoid" />
+
+    <ImageView
+        android:id="@+id/macacoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/macaco"
+        android:layout_alignBottom="@+id/leaoid"
+        android:layout_alignStart="@+id/gatoid"
+        android:layout_alignTop="@+id/leaoid" />
+
+    <ImageView
+        android:id="@+id/ovelhaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ovelha"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/leaoid"
+        android:layout_alignStart="@+id/leaoid" />
+
+    <ImageView
+        android:id="@+id/vacaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ovelhaid"
+        android:layout_alignStart="@+id/macacoid"
+        android:layout_alignTop="@+id/ovelhaid"
+        app:srcCompat="@drawable/vaca" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/direitos"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+</RelativeLayout>

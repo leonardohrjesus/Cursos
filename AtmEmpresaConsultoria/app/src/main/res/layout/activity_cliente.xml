@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/detalhe_cliente"
+
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        app:srcCompat="@drawable/cliente1"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginStart="29dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cliente2"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empresa de Desenvolvimento de Sistemas"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empresa de Auditoria"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="157dp"
+        android:layout_height="23dp"
+        android:text="@string/texto_nosso_clientes"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+</RelativeLayout>

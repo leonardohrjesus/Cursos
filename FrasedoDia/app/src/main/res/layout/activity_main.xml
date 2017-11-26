@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="frasesdodia.android.leonardo.com.br.frasedodia.MainActivity">
+
+    <Button
+        android:id="@+id/btn_nova_frase"
+        android:layout_width="352dp"
+        android:layout_height="45dp"
+        android:text="@string/texto_frase_do_dia"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txt_nova_frase"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_nova_frase"
+        android:layout_below="@+id/btn_nova_frase"
+        android:layout_marginTop="35dp"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/texto_nova_frase"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="99dp"
+        tools:layout_width="match_parent" />
+</RelativeLayout>

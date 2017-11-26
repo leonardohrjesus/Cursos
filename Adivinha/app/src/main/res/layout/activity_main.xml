@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.leonardo.com.br.adivinha.MainActivity">
+
+    <TextView
+        android:id="@+id/txtescolhaid"
+        android:layout_width="@dimen/padao"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="Adivinha"
+
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/Tamanho_cabecalho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnresultadoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtescolhaid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:text="@string/jogar" />
+
+    <TextView
+        android:id="@+id/Resultadoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:text="Nenhum Texto"
+        android:textSize="@dimen/Texo_numero"
+        android:layout_below="@+id/btnresultadoid"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
